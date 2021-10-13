@@ -78,6 +78,28 @@ const COMMANDS = {
             auth: "",
             args: "false"
         },
+        RANKMONEY: {
+            name: "rankmoney",
+            aliases: ["rankcookoin"],
+            category: "general",
+            description: "see user rank money",
+            usage: "",
+            cooldown: 5,
+            permissions: "",
+            auth: "",
+            args: "false"
+        },
+        RANKCOOKIE: {
+            name: "rankcookie",
+            aliases: ["rank"],
+            category: "general",
+            description: "see user rank cookie",
+            usage: "",
+            cooldown: 5,
+            permissions: "",
+            auth: "",
+            args: "false"
+        },
         WORK: {
             name: "work",
             aliases: ["w"],
@@ -87,7 +109,7 @@ const COMMANDS = {
             cooldown: 3600,
             permissions: "",
             auth: "",
-            args: "false"
+            args: "none"
         },
         FLIP: {
             name: "flip",
@@ -95,18 +117,7 @@ const COMMANDS = {
             category: "general",
             description: "flip a coin for a chance to win cookoins",
             usage: "",
-            cooldown: 0,
-            permissions: "",
-            auth: "",
-            args: "false"
-        },
-        ROULETTE: {
-            name: "roulette",
-            aliases: ["r"],
-            category: "general",
-            description: "spin a roulette for a chance to win a special prize",
-            usage: "",
-            cooldown: 600,
+            cooldown: 60,
             permissions: "",
             auth: "",
             args: "none"
