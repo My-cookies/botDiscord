@@ -18,7 +18,7 @@ const COMMANDS = {
             category: "general",
             description: "add money for user",
             usage: "",
-            cooldown: 30,
+            cooldown: 5,
             permissions: "",
             auth: "dev",
             args: "true"
@@ -29,9 +29,31 @@ const COMMANDS = {
             category: "general",
             description: "remove money for user",
             usage: "",
-            cooldown: 30,
+            cooldown: 5,
             permissions: "",
             auth: "dev",
+            args: "true"
+        },
+        PAY: {
+            name: "pay",
+            aliases: ["p"],
+            category: "general",
+            description: "pay money for user",
+            usage: "",
+            cooldown: 5,
+            permissions: "",
+            auth: "",
+            args: "true"
+        },
+        DON: {
+            name: "don",
+            aliases: ["d"],
+            category: "general",
+            description: "don cookies for user",
+            usage: "",
+            cooldown: 5,
+            permissions: "",
+            auth: "",
             args: "true"
         },
         BUY: {
@@ -40,7 +62,7 @@ const COMMANDS = {
             category: "general",
             description: "buy a article in a shop",
             usage: "",
-            cooldown: 10,
+            cooldown: 5,
             permissions: "",
             auth: "",
             args: "true"

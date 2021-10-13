@@ -26,4 +26,42 @@ class Bot extends Client{
         this.cooldowns = new Collection();
 
     }
+    async launch() {
+        await this.init();
+        await this.login(this.token);
+    };
+
+    async init() {
+        // Commands loader
+        let dir = `${__dirname}/../commands/`
+        readdirSync(dir).forEach(dirs => {
+            const commands = readdirSync(`${dir}/${dirs}/`).filter(files => files.endsWith(".js"));
+
+            for (const file of commands) {
+                const getFileName = require(`${dir}/${dirs}/${file}`);
+                this.commands.set(getFileName.help.name, getFileName);
+                console.log(`Command loaded : ${getFileName.help.name}`);
+            }
+        });
+
+        // Events loader
+        dir = __dirname+"/../events/"
+        readdirSync(dir).forEach(dirs => {
+            const events = readdirSync(`${dir}/${dirs}/`).filter(files => files.endsWith(".js"));
+
+            for (const event of events) {
+                const evt = require(`${dir}/${dirs}/${event}`);
+                const evtName = event.split(".")[0];
+                this.on(evtName, evt.bind(null, this));
+                console.log(`Event loaded : ${evtName}`);
+            }
+        })
+
+    };
+
 }
+
+module.exports = (token) => new Bot(token, {
+    disableEveryone: true,
+    fetchAllMembers: true,
+});
