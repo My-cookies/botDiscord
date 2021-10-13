@@ -100,5 +100,16 @@ const COMMANDS = {
             auth: "",
             args: "false"
         },
+        ROULETTE: {
+            name: "roulette",
+            aliases: ["r"],
+            category: "general",
+            description: "spin a roulette for a chance to win a special prize",
+            usage: "",
+            cooldown: 600,
+            permissions: "",
+            auth: "",
+            args: "none"
+        },
     }
 }
