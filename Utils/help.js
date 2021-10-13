@@ -78,5 +78,27 @@ const COMMANDS = {
             auth: "",
             args: "false"
         },
+        WORK: {
+            name: "work",
+            aliases: ["w"],
+            category: "general",
+            description: "gain money over time",
+            usage: "",
+            cooldown: 3600,
+            permissions: "",
+            auth: "",
+            args: "false"
+        },
+        FLIP: {
+            name: "flip",
+            aliases: ["f"],
+            category: "general",
+            description: "flip a coin for a chance to win cookoins",
+            usage: "",
+            cooldown: 0,
+            permissions: "",
+            auth: "",
+            args: "false"
+        },
     }
 }
