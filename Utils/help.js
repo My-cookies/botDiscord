@@ -1,27 +1,38 @@
 
 const COMMANDS = {
     GENERAL: {
-        TEST: {
-            name: "test",
-            aliases: ["t"],
+        SEEMONEY: {
+            name: "seemoney",
+            aliases: ["seemcookoin"],
             category: "general",
-            description: "test command",
+            description: "see money for user",
             usage: "",
             cooldown: 5,
             permissions: "",
             auth: "",
-            args: "false"
+            args: "none"
         },
         ADDMONEY: {
             name: "addmoney",
-            aliases: ["addmoula"],
+            aliases: ["addcookoin"],
             category: "general",
             description: "add money for user",
             usage: "",
             cooldown: 30,
             permissions: "",
             auth: "dev",
-            args: "false"
+            args: "true"
+        },
+        REMOVEMONEY: {
+            name: "removemoney",
+            aliases: ["removecookoin"],
+            category: "general",
+            description: "remove money for user",
+            usage: "",
+            cooldown: 30,
+            permissions: "",
+            auth: "dev",
+            args: "true"
         },
         BUY: {
             name: "buy",
@@ -32,7 +43,7 @@ const COMMANDS = {
             cooldown: 10,
             permissions: "",
             auth: "",
-            args: "false"
+            args: "true"
         },
         SHOP: {
             name: "shop",

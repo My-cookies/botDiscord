@@ -11,7 +11,7 @@ module.exports.run = (client, message, args) => {
     let items = item.fetch(`cookies_${message.guild.id}_${user.id}`)
     if (items === null) items = 0
 
-return message.channel.send(`${argent}**piece** Cookies **${items}**`)
+return message.channel.send(`${argent}**cookoins** Cookies **${items}**`)
 }
 
-module.exports.help = COMMANDS.GENERAL.TEST;
+module.exports.help = COMMANDS.GENERAL.SEEMONEY;
