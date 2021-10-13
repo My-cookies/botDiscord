@@ -14,6 +14,4 @@ module.exports.run = (client, message, args) => {
 return message.channel.send(`${argent}**piece** Cookies **${items}**`)
 }
 
-module.exports.help = {
-    name: 'test',
-  };
+module.exports.help = COMMANDS.GENERAL.TEST;

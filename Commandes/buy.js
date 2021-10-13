@@ -20,6 +20,4 @@ module.exports.run = (client, message, args) => {
     }
 }
 
-module.exports.help = {
-    name: 'buy',
-  };
+module.exports.help = COMMANDS.GENERAL.BUY;

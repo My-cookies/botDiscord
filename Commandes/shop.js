@@ -7,6 +7,4 @@ module.exports.run = (client, message, args) => {
     return message.channel.send("`1` : cookies")
 }
 
-module.exports.help = {
-    name: 'shop',
-  };
+module.exports.help = COMMANDS.GENERAL.SHOP;

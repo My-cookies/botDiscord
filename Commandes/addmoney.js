@@ -14,6 +14,4 @@ module.exports.run = (client, message, args) => {
     return message.channel.send(`Vous avez donné ${args[1]}`)
 }
 
-module.exports.help = {
-    name: 'addmoney',
-  };
+module.exports.help = COMMANDS.GENERAL.ADDMONEY;
