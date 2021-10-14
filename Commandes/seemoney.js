@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
-const {PREFIX} = require("../../config.json");
-const COMMANDS = require('../../Utils/help');
+const {PREFIX} = require("../config.js");
+const economy = new db.table("Economy")
+const item = new db.table("Cookies")
 module.exports.run = (client, message, args) => {
 
     let user = message.author
