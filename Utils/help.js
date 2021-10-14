@@ -122,5 +122,30 @@ const COMMANDS = {
             auth: "",
             args: "none"
         },
+        ROB: {
+            name: "rob",
+            aliases: [],
+            category: "general",
+            description: "rob money  of an other player",
+            usage: "",
+            cooldown: 60,
+            permissions: "",
+            auth: "",
+            args: "none"
+        },
+        ROULETTE: {
+            name: "roulette",
+            aliases: [],
+            category: "general",
+            description: "spin the wheel to win a special prize",
+            usage: "",
+            cooldown: 60,
+            permissions: "",
+            auth: "",
+            args: "none"
+        },
     }
 }
+
+
+module.exports = COMMANDS;

@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
-const {PREFIX} = require("../config.js");
-const economy = new db.table("Economy")
-const item = new db.table("Cookies")
+const {PREFIX} = require("../../config.json");
+const COMMANDS = require('../../Utils/help');
 
 module.exports.run = (client, message, args) => {
     
@@ -11,10 +10,10 @@ module.exports.run = (client, message, args) => {
 
     if (monnaie < args[1]) return message.channel.send("Vous n'avez pas asser de cookoin")
 
-    economy.add(`money_${message.guild.id}_${user.id}`,args[1])
-    economy.subtract(`money_${message.guild}_${user}`, args[1])
+    item.add(`cookies_${message.guild.id}_${user.id}`,args[1])
+    item.subtract(`cookies_${message.guild}_${user}`, args[1])
 
     return message.channel.send(`Vous avez donné ${args[1]}`)
 }
 
-module.exports.help = COMMANDS.GENERAL.PAY;
+module.exports.help = COMMANDS.GENERAL.DON;
