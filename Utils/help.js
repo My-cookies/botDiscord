@@ -45,17 +45,6 @@ const COMMANDS = {
             auth: "",
             args: "true"
         },
-        DON: {
-            name: "don",
-            aliases: ["d"],
-            category: "general",
-            description: "don cookies for user",
-            usage: "",
-            cooldown: 5,
-            permissions: "",
-            auth: "",
-            args: "true"
-        },
         BUY: {
             name: "buy",
             aliases: ["b"],
@@ -122,5 +111,42 @@ const COMMANDS = {
             auth: "",
             args: "none"
         },
+        ROB: {
+            name: "rob",
+            aliases: [],
+            category: "general",
+            description: "rob a player",
+            usage: "",
+            cooldown: 60,
+            permissions: "",
+            auth: "",
+            args: "none"
+        },
+        ROULETTE: {
+            name: "roulette",
+            aliases: [],
+            category: "general",
+            description: "try to win a prize",
+            usage: "",
+            cooldown: 60,
+            permissions: "",
+            auth: "",
+            args: "none"
+        },
+        HELP: {
+            name: "help",
+            aliases: ["h"],
+            category: "general",
+            description: "Show all commands",
+            descriptionFr: "Montre la liste des commandes",
+            usage: "[command_name]",
+            usageFr: "[nom_commande]",
+            cooldown: 0,
+            permissions: "",
+            auth: "",
+            args: "none"
+        },
     }
 }
+
+module.exports = COMMANDS

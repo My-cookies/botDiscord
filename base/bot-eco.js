@@ -33,7 +33,7 @@ class Bot extends Client{
 
     async init() {
         // Commands loader
-        let dir = `${__dirname}/../commands/`
+        let dir = `${__dirname}/../Commandes/`
         readdirSync(dir).forEach(dirs => {
             const commands = readdirSync(`${dir}/${dirs}/`).filter(files => files.endsWith(".js"));
 
@@ -45,7 +45,7 @@ class Bot extends Client{
         });
 
         // Events loader
-        dir = __dirname+"/../events/"
+        dir = __dirname+"/../Events/"
         readdirSync(dir).forEach(dirs => {
             const events = readdirSync(`${dir}/${dirs}/`).filter(files => files.endsWith(".js"));
 
