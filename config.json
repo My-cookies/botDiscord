@@ -1,0 +1,18 @@
+{
+    "auth": {
+        "developper": [
+            "741279557839093803"
+        ]
+    },
+
+    "setting": {
+        "prefix": ",",
+        "updater_interval": 25000,
+        "API_URL": "http://localhost:3000"
+    },
+
+    "bot": {
+        "id": "897402502184575027",
+        "invite": "https://discord.com/oauth2/authorize?client_id=897402502184575027&scope=bot&permissions=8"
+    }
+}
